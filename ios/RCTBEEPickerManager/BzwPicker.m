@@ -44,6 +44,7 @@
 -(void)makeuiWith:(NSArray *)topbgColor With:(NSArray *)bottombgColor With:(NSArray *)leftbtnbgColor With:(NSArray *)rightbtnbgColor With:(NSArray *)centerbtnColor
 {
     UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0,0, self.frame.size.width, 40)];
+    view.layer.zPosition =  10000;
     view.backgroundColor = [self colorWith:topbgColor];
     [self addSubview:view];
     
